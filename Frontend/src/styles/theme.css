@@ -1,0 +1,25 @@
+:root {
+  /* Brand palette (edit just these to re-theme the whole site) */
+  --brand:        #111827; /* slate-900 for text/headers/nav bg */
+  --brand-2:      #0f172a; /* slate-900-ish alt */
+  --accent:       #4f46e5; /* indigo-600 for buttons/links */
+  --accent-hover: #4338ca; /* indigo-700 */
+  --surface:      #ffffff; /* main page background */
+  --muted:        #f8fafc; /* section bg like gray-50/slate-50 */
+  --text:         #0f172a; /* primary text */
+  --text-muted:   #334155; /* secondary text */
+  --on-dark:      #ffffff; /* text on dark surfaces */
+}
+
+/* optional dark scheme; toggle by adding class="dark" on <html> or <body> */
+.dark {
+  --brand:        #0b1020;
+  --brand-2:      #0b1020;
+  --accent:       #8b5cf6;
+  --accent-hover: #7c3aed;
+  --surface:      #0b1020;
+  --muted:        #0f172a;
+  --text:         #e5e7eb;
+  --text-muted:   #cbd5e1;
+  --on-dark:      #ffffff;
+}
