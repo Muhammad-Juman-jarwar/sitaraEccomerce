@@ -1,0 +1,19 @@
+{
+  "name": "sitarayza-ecommerce",
+  "version": "1.0.0",
+  "description": "Sitarayza E-commerce Store - Full Stack Application",
+  "private": true,
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd Frontend && npm install",
+    "install:all": "npm install && npm run install:backend && npm run install:frontend",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd Frontend && npm run dev",
+    "dev": "concurrently -n \"backend,frontend\" -c \"yellow,cyan\" \"npm run backend\" \"npm run frontend\"",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "build": "cd Frontend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
